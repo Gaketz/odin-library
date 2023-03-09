@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  display: grid;
+  grid-row: auto 1fr;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #fff;
+  align-self: center;
+  justify-self: center;
+  font-family: "Roboto", sans-serif;
+  padding: 5px;
+  text-shadow: 2px 2px #c7c7c7;
+}
+
+.container {
+  margin: 40px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  background-color: rgb(254, 254, 254, 0.65);
+  border-radius: 5px;
+}
+
+.add,
+.submit {
+  cursor: pointer;
+  padding: 8px;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  background-color: #8ec5fc;
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+form {
+  height: 1fr;
+  position: absolute;
+  left:50%;
+  top:50%;
+  display: none;
+  grid-template-rows: repeat(4, auto);
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 25px;
+  gap: 12px;
+  background-color: rgb(254, 254, 254, 0.8);
+  font-family: "Roboto", sans-serif;
+}
+
+form input {
+  border: 1px black;
+  border-radius: 8px;
+}
+
+.inputSection {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
