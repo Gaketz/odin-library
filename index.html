@@ -9,26 +9,26 @@
   </head>
   <body>
     <h1>The Odin Library</h1>
+    <button class="add">Add</button>
     <div class="container">
-      <button class="add">Add</button>
-      <div class="books"></div>
+      <div id="library"></div>
     </div>
     <form class="form">
       <div class="inputSection">
         <label for="title">Book's Title</label>
-        <input type="text" id="title" required/>
+        <input type="text" id="title" required />
       </div>
       <div class="inputSection">
         <label for="author">Book's Author</label>
-        <input type="text" id="author" required/>
+        <input type="text" id="author" required />
       </div>
       <div class="inputSection">
         <label for="pages">Book's Pages</label>
-        <input type="number" id="pages" required/>
+        <input type="number" id="pages" required />
       </div>
       <div class="inputSection">
         <label for="read">Read it?</label>
-        <input type="checkbox" id="read" required/>
+        <input type="checkbox" id="read" required />
       </div>
       <input type="submit" class="submit" value="Add New Book" />
     </form>

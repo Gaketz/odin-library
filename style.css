@@ -9,7 +9,7 @@ body {
   background-color: #8ec5fc;
   background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
   display: grid;
-  grid-row: auto 1fr;
+  grid-row: auto auto 1fr;
 }
 
 h1 {
@@ -25,10 +25,6 @@ h1 {
 .container {
   margin: 40px;
   padding: 20px;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  background-color: rgb(254, 254, 254, 0.65);
-  border-radius: 5px;
 }
 
 .add,
@@ -42,16 +38,27 @@ h1 {
   border-radius: 8px;
   text-transform: uppercase;
   font-weight: 800;
+  align-self: center;
+  justify-self: center;
+}
+
+.add {
+  height: 3rem;
+  width: 5rem;
+  align-items: center;
+  justify-self: center;
+  border: 1px 1px #fff;
+  text-align: center;
+  margin-top: 15px;
 }
 
 form {
-  height: 1fr;
-  position: absolute;
-  left:50%;
-  top:50%;
+  position: relative;
   display: none;
   grid-template-rows: repeat(4, auto);
   background-color: #fff;
+  margin-left: 25rem;
+  margin-right: 25rem;
   border: none;
   border-radius: 8px;
   padding: 25px;
@@ -70,3 +77,74 @@ form input {
   justify-content: space-between;
   gap: 5px;
 }
+
+.title,
+.author,
+.pages,
+.read {
+  align-self: center;
+  justify-self: center;
+  font-family: "Roboto", sans-serif;
+  color: #3f3f3f;
+}
+
+.book-card {
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 5px 8rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 5px;
+  padding: 5px;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-header {
+  grid-column: 1;
+  align-self: center;
+  justify-self: start;
+  display: flex;
+  gap: 12px;
+}
+
+.card-body {
+  grid-column: 2;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  gap: 12px;
+}
+
+.card-buttons {
+  grid-column: 3;
+  align-self: center;
+  justify-self: end;
+  display: flex;
+  gap: 12px;
+}
+
+.remove-btn,
+.toggle-read-btn {
+  cursor: pointer;
+  padding: 8px;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  background-color: #8ec5fc;
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 800;
+  align-self: center;
+  justify-self: center;
+}
+
+.remove-btn {
+  background-color: #e0c3fc;
+}
+.add:hover,
+.submit:hover, .remove-btn:hover,
+.toggle-read-btn:hover {
+  opacity: 0.6;
+}
+
